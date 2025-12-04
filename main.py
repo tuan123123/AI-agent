@@ -16,7 +16,7 @@ class ResearchResponse(BaseModel):
     tools_used: list[str]
     
 
-llm = ChatAnthropic(model="claude-3-5-sonnet-20241022")
+llm = ChatAnthropic(model="gpt-5-nano")
 parser = PydanticOutputParser(pydantic_object=ResearchResponse)
 
 
